@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WONDERFUL TRAVELS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            font-family: 'Noticia Text', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div class="name">
+                WONDERFUL TRAVELS
+            </div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <nav>
+
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <input type="text" placeholder="Search your destination here">
+        </div>
+        <div class="tag">
+            <h1>WANDER WITH WONDERFUL TRAVELS</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1>PLAN YOUR BEST &nbsp;TRIPS WITH US</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <label for="name">NAME</label>
+                <input type="text" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <label for="destination">DESTINATION</label>
+                <input type="text" id="destination" placeholder="Enter your Destination">
+            </div>
+            <div class="form-group">
+                <label for="mobile">MOBILE NO.</label>
+                <input type="text" id="mobile" placeholder="Enter your Mobile no.">
+            </div>
+            <div class="form-group">
+                <label for="members">NO.OF MEMBERS(MAX. LIMIT:100)</label>
+                <input type="number" min="1" max="100" id="members" placeholder="No.of Members">
+            </div>
+            <div class="form-group">
+                <label for="Hotels">CHOOSE THE TYPE OF HOTEL</label>
+                <select id="Hotels">
+                    <option value="3star" selected>3 Star</option>
+                    <option value="4star" selected>4 Star</option>
+                    <option value="5star" selected>5 Star</option>
+                    <option value="6star" selected>6 Star</option>
+                    <option value="7star" selected>7 Star</option>
+                </select>
+            </div>
+            <input type="submit" value="SUBMIT" class="btn" id="sub"></button>
+            <input type="reset" value="RESET" class="btn" id="res"></button>
+        </form>
+    </div>
+</body>
+
+</html>
